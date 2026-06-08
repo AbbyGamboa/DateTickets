@@ -159,6 +159,11 @@ footer{
         width: 90%;
     }
 
+    .form_section{
+        padding: 10px;
+
+    }
+
     .white-space{
         margin: auto;
         padding: 20px;
