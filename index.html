@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pixelify+Sans:wght@400..700&family=Sixtyfour&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="top">
+            <header>
+                <h1>Date Tickets</h1>
+            </header>
+            <div class="white-space">
+                <h1>Welcome To Your Online Ticket Reedemer</h1>
+                <p>View the tickets below. Click on the redeem button to use a ticket!</p>
+            </div>
+        </section>
+
+        <main>
+            <section class="sect-one">
+                <h1>Choose a Ticket:</h1>
+                <div class="card-div">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Beach.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Beach Episode</h5>
+                            <p class="card-text">Everyone needs a beach episode! Enjoy a day at the beach featuring light beach snacks, drinks and pictures.</p>
+                            <a href="#chosen_date"><button type="button" class="btn btn-danger" onclick="set_date_event('Beach Episode'); ">Use Ticket</button></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="Extensive sPA dAY.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Extensive Spa Day</h5>
+                            <p class="card-text">This is a special spa day that includes candles, low music and extensive care toward an area of your choice.</p>
+                            <a href="#chosen_date"><button type="button" class="btn btn-danger ticket" onclick="set_date_event('Extensive Spa Day'); ">Use Ticket</button></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="dayTrip.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Day Trip</h5>
+                            <p class="card-text">A day roadtrip to either a surpise location or a chosen location. Please specify when redeeming the ticket.</p>
+                            <a href="#chosen_date"><button type="button" class="btn btn-danger" onclick="set_date_event('Day Trip'); ">Use Ticket</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-div">
+                    <div class="card" style="width: 18rem;">
+                        <img src="movieNight.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie Night</h5>
+                            <p class="card-text">An outdoor (or indoor) movie watching night featuring snacks and a comfortable sitting selection.</p>
+                            <a href="#chosen_date"><button type="button" class="btn btn-danger" onclick="set_date_event('Movie Night'); ">Use Ticket</button></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="SurpriseDinner.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Surprise Dinner</h5>
+                            <p class="card-text">A surpising arrangment of food specifically prepared in your honor! Drinks and dessert are included.</p>
+                            <a href="#chosen_date"><button type="button" class="btn btn-danger" onclick="set_date_event('Surprise Dinner'); ">Use Ticket</button></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="stardust.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Star Gazing Date</h5>
+                            <p class="card-text">A night date on a soft blanket. If the chosen date has unclear skies, a new date will be discussed.</p>
+                            <a href="#chosen_date"><button type="button" class="btn btn-danger" onclick="set_date_event('Star Gazing Date'); ">Use Ticket</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="form_section">
+            <form action="mailto:gayatrivas4220@gmail.com,avgamboa2004@gmail.com?subject=Date%20Reminder" method="post" enctype="text/plain" class="form">
+                <h1>Redeem Ticket</h1>
+                <h4>Event: <input id="chosen_date" name="chosen"></h4>
+
+        
+                <label for="">Please select a day for the date:</label><br>
+                <div>
+                    <input type="date" name="date"><i class="fa-regular fa-calendar-days"></i>
+                </div><br>
+        
+                <label for="">Please select a time for the date:</label><br>
+                <div>
+                    <input type="time" name="time"><i class="fa-regular fa-clock"></i>
+                </div><br>
+        
+                <label for="">Any special requests for the date? </label><br>
+                <textarea placeholder="Type here..." name="message"></textarea>
+        
+                <input type="submit" value="Submit">
+        
+            </form>
+        </section>
+        <footer>
+            <h4>Made with Love</h4>
+        </footer>
+    </body>
+</html>
